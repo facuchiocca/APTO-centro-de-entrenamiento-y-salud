@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAINING CENTER | Rosario </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/2.3.1/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght=700&family=Space+Grotesk:wght=400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="WhatsApp Image 2026-06-18 at 3.30.56 PM.jpeg">
+    <!-- SCRIPT DE EMERGENCIA: Apaga el preloader pase lo que pase -->
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                setTimeout(() => {
+                    preloader.classList.add('fade-out');
+                }, 400);
+            }
+        });
+        // Por si las dudas se traba algo pesado, lo forzamos a los 3 segundos igual
+        setTimeout(() => {
+            const preloader = document.getElementById('preloader');
+            if (preloader && !preloader.classList.contains('fade-out')) {
+                preloader.classList.add('fade-out');
+            }
+        }, 3000);
+    </script>
+</head>
+<body>
+
+    <!-- PANTALLA DE CARGA CYBER-NEON (PRELOADER) -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h2 class="loader-logo">TRAINING<span>CENTER</span></h2>
+            <div class="loader-bar"></div>
+            <p class="loader-text">CARGANDO CONTENIDOS...</p>
+        </div>
+    </div>
+
+    <!-- Luces de neón ambientales de fondo -->
+    <div class="ambient-glow ag-1"></div>
+    <div class="ambient-glow ag-2"></div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/543415694993?text=Hola!%20Quiero%20inscribirme%20al%20Training%20Center" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+   <header class="header">
+        <div class="logo">TRAINING<span>CENTER</span></div>
+        
+        <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav">
+            <a href="#beneficios">Beneficios</a>
+            <a href="#clases">Clases</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#planes">Membresías</a>
+            <a href="#sedes">Sedes</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacto" class="btn-cyber-nav">Inscribite ahora</a>
+        </nav>
+    </header>
+    <!-- 1. HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tag-top" data-aos="fade-down">ESTÁNDAR INTERNACIONAL</div>
+            <h1 data-aos="zoom-in-up" data-aos-duration="1000">TRANSFORMÁ<br>TU CUERPO.<br><span class="neon-text">SUPERÁ LÍMITES.</span></h1>
+            <p data-aos="fade-up" data-aos-delay="300">No es un gimnasio. Es la cadena de alto rendimiento más importante de la región. Red de instalaciones de elite para objetivos reales.</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
+                <a href="#contacto" class="btn-main">COMENZAR HOY <i class="fas fa-bolt"></i></a>
+                <a href="#sedes" class="btn-sub">VER SEDES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. SECCIÓN BENEFICIOS -->
+    <section id="beneficios" class="section-padding">
+        <div class="container">
+            <div class="section-title-wrapper" data-aos="fade-right">
+                <span class="outline-text">01 // POR QUÉ ACÁ</span>
+                <h2>BENEFICIOS <span class="text-yellow">ELITE</span></h2>
+            </div>
+            <div class="grid-4">
+                <div class="cyber-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-neon-line"></div>
+                    <i class="fas fa-dumbbell card-icon"></i>
+                    <h3>ÚLTIMA GENERACIÓN</h3>
+                    <p>Equipamiento biomecánico importado de máxima eficiencia muscular.</p>
+                    <div class="card-counter">+2500<span>SOCIOS</span></div>
+                </div>
+                <div class="cyber-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-neon-line"></div>
+                    <i class="fas fa-user-md card-icon"></i>
+                    <h3>KINESIOLOGÍA & SALUD</h3>
+                    <p>Profesionales dedicados a la prevención, postura y alto rendimiento deportivo.</p>
+                    <div class="card-counter">100%<span>PROFESIONAL</span></div>
+                </div>
+                <div class="cyber-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-neon-line"></div>
+                    <i class="fas fa-notes-medical card-icon"></i>
+                    <h3>REHABILITACIÓN FÍSICA</h3>
+                    <p>Especialistas en kinefilaxia y readaptación para entrenar sin dolor ni lesiones.</p>
+                    <div class="card-counter">KINE<span>SAFETY</span></div>
+                </div>
+                <div class="cyber-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-neon-line"></div>
+                    <i class="fas fa-network-wired card-icon"></i>
+                    <h3>RED COMPLETA</h3>
+                    <p>Accedé a cualquiera de nuestras múltiples sedes equipadas con tecnología de punta.</p>
+                    <div class="card-counter">MULTI<span>SEDE</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN CLASES -->
+    <section id="clases" class="section-padding bg-black-pure">
+        <div class="container">
+            <div class="section-title-wrapper text-center" data-aos="fade-up">
+                <span class="outline-text">02 // PROGRAMAS</span>
+                <h2>CLASES DE <span class="neon-text">ALTO NIVEL</span></h2>
+            </div>
+            <div class="grid-3">
+                <div class="clase-box" data-aos="zoom-in">
+                    <div class="clase-overlay"></div>
+                    <div class="clase-content">
+                        <span class="clase-tag">FUERZA</span>
+                        <h3>MUSCULACIÓN</h3>
+                        <p>Hipertrofia y potencia con planificación individualizada.</p>
+                    </div>
+                </div>
+                <div class="clase-box" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="clase-overlay"></div>
+                    <div class="clase-content">
+                        <span class="clase-tag">INTENSIDAD</span>
+                        <h3>CROSS TRAINING</h3>
+                        <p>Desafiá tu resistencia metabólica y fuerza mental en cada WOD.</p>
+                    </div>
+                </div>
+                <div class="clase-box dynamic-border" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="clase-overlay" style="background: linear-gradient(to top, rgba(255,245,0,0.15), transparent);"></div>
+                    <div class="clase-content">
+                        <span class="clase-tag tag-yellow">SALUD & RENDIMIENTO</span>
+                        <h3>REHABILITACIÓN FÍSICA</h3>
+                        <p>Readaptación funcional guiada por profesionales de la kinesiología.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN HORARIOS & CRONOGRAMA INTERACTIVO -->
+    <section id="horarios" class="section-padding">
+        <div class="container">
+            <div class="section-title-wrapper" data-aos="fade-right">
+                <span class="outline-text">03 // PLANIFICÁ TU SEMANA</span>
+                <h2>CRONOGRAMA DE <span class="text-yellow">CLASES</span></h2>
+            </div>
+
+            <!-- Selectores de Día -->
+            <div class="dias-selector" data-aos="fade-up">
+                <button class="dia-btn active" onclick="filtrarDia('lunes-miercoles')">LUN / MIÉ / VIE</button>
+                <button class="dia-btn" onclick="filtrarDia('martes-jueves')">MAR / JUE</button>
+                <button class="dia-btn" onclick="filtrarDia('sabados')">SÁBADOS</button>
+            </div>
+
+            <!-- Tabla de Horarios Responsiva -->
+            <div class="tabla-horarios-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <table class="tabla-cyber">
+                    <thead>
+                        <tr>
+                            <th>Horario</th>
+                            <th>Actividad / Programa</th>
+                            <th>Sedes Disponibles</th>
+                            <th>Nivel</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cronograma-body">
+                        <!-- Se inyecta dinámicamente con JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECCIÓN PLANES -->
+    <section id="planes" class="section-padding bg-black-pure">
+        <div class="container">
+            <div class="section-title-wrapper text-center" data-aos="fade-up">
+                <span class="outline-text">04 // TARIFAS</span>
+                <h2>ELEGÍ TU <span class="text-yellow">ACCESO</span></h2>
+            </div>
+            <div class="grid-3 alinear-items">
+                <div class="glass-card" data-aos="fade-right">
+                    <h3>PLAN BÁSICO</h3>
+                    <div class="price">$12.000<span>/mes</span></div>
+                    <ul>
+                        <li><i class="fas fa-check text-yellow"></i> Sala de Musculación</li>
+                        <li><i class="fas fa-check text-yellow"></i> Sede única a elección</li>
+                        <li><i class="fas fa-times text-red"></i> Clases Grupales / Cross</li>
+                    </ul>
+                    <a href="#contacto" class="btn-card-sub">SELECCIONAR</a>
+                </div>
+
+                <!-- Plan Destacado -->
+                <div class="glass-card destacado-cyber" data-aos="zoom-in">
+                    <div class="hot-badge">MÁS COMPRADO</div>
+                    <h3>PLAN FULL</h3>
+                    <div class="price text-yellow">$18.000<span>/mes</span></div>
+                    <ul>
+                        <li><i class="fas fa-bolt text-yellow"></i> Acceso Libre a toda la Red TC</li>
+                        <li><i class="fas fa-bolt text-yellow"></i> Todas las clases y Cross</li>
+                        <li><i class="fas fa-bolt text-yellow"></i> Rutinas en App Oficial</li>
+                        <li><i class="fas fa-check text-yellow"></i> Soporte de Kinesiología bimensual</li>
+                    </ul>
+                    <a href="#contacto" class="btn-card-main">COMPRAR PLAN <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="glass-card" data-aos="fade-left">
+                    <h3>PLAN PREMIUM</h3>
+                    <div class="price">$25.000<span>/mes</span></div>
+                    <ul>
+                        <li><i class="fas fa-check text-yellow"></i> Todo lo del Plan Full</li>
+                        <li><i class="fas fa-check text-yellow"></i> Acceso exclusivo Black Room</li>
+                        <li><i class="fas fa-check text-yellow"></i> Evaluaciones de Postura y Marcha</li>
+                    </ul>
+                    <a href="#contacto" class="btn-card-sub">SELECCIONAR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SECCIÓN SEDES INTERACTIVAS MULTIPLE -->
+    <section id="sedes" class="section-padding">
+        <div class="container">
+            <div class="section-title-wrapper" data-aos="fade-right">
+                <span class="outline-text">05 // RED DE ENTRENAMIENTO</span>
+                <h2>NUESTRAS <span class="text-yellow">SEDES</span></h2>
+            </div>
+            
+            <div class="sedes-interactive-layout">
+                <!-- Selector Izquierdo de Sedes -->
+                <div class="sedes-selector-wrapper" data-aos="fade-right">
+                    <div class="category-divider">TRAINING CENTER</div>
+                    <div class="sedes-list">
+                        <button class="sede-tab-btn active" onclick="cambiarSede('abasto', 'Corrientes 2135', '341 - 2581774', '-32.9348', '-60.6452')">Sede Abasto</button>
+                        <button class="sede-tab-btn" onclick="cambiarSede('centro', 'Salta 1801', '341 - 5694993', '-32.9365', '-60.6485')">Sede Centro</button>
+                        <button class="sede-tab-btn" onclick="cambiarSede('hipodromo', 'Av. Dante Alighieri 2550', 'Sin teléfono', '-32.9555', '-60.6621')">Sede Hipódromo</button>
+                        <button class="sede-tab-btn" onclick="cambiarSede('sanmartin', 'San Martín 1154', '341 - 3593317', '-32.9482', '-60.6384')">Sede San Martin</button>
+                        <button class="sede-tab-btn" onclick="cambiarSede('echesortu', 'San Nicolás 1171', '341 - 6156638', '-32.9441', '-60.6662')">Sede Echesortu</button>
+                        <button class="sede-tab-btn" onclick="cambiarSede('norte', 'Av. Alberdi 690 bis', '341 - 5695100', '-32.9215', '-60.6695')">Sede Norte</button>
+                        <button class="sede-tab-btn" onclick="cambiarSede('lourdes', 'Santa Fe 2530', '341 703-3222', '-32.9412', '-60.6575')">Sede Lourdes</button>
+                        <button class="sede-tab-btn" onclick="cambiarSede('rioja', 'Rioja 2074', '3416 920777', '-32.9435', '-60.6511')">Sede Rioja</button>
+                        <button class="sede-tab-btn" onclick="cambiarSede('montevideo', 'Montevideo 1171', '3413 123199', '-32.9515', '-60.6492')">Sede Montevideo</button>
+                        <button class="sede-tab-btn" onclick="cambiarSede('microcentro', 'Santa Fe 1270', '3413 550149', '-32.9465', '-60.6398')">Sede Microcentro</button>
+                    </div>
+
+                    <div class="category-divider category-black">BLACK ROOM <i class="fas fa-crown"></i></div>
+                    <div class="sedes-list">
+                        <button class="sede-tab-btn btn-blackroom" onclick="cambiarSede('br-sanlorenzo', 'San Lorenzo y Sgto. Cabral', '341 - 3550149', '-32.9422', '-60.6315')">BR San Lorenzo</button>
+                        <button class="sede-tab-btn btn-blackroom" onclick="cambiarSede('br-montevideo', 'Montevideo 1171', '3413 - 123199', '-32.9515', '-60.6492')">BR Montevideo</button>
+                    </div>
+                </div>
+
+                <!-- Bloque de Visualización Derecho -->
+                <div class="sede-display-card" data-aos="fade-left">
+                    <div class="sede-info-content">
+                        <div id="sede-badge-tipo" class="sede-tag">SEDE RED</div>
+                        <h3 id="sede-nombre-titulo">TRAINING CENTER ABASTO</h3>
+                        
+                        <div class="sede-detalles">
+                            <div class="detalle-item">
+                                <i class="fas fa-map-marker-alt text-yellow"></i>
+                                <p id="sede-txt-direccion">Corrientes 2135, Rosario, Santa Fe</p>
+                            </div>
+                            <div class="detalle-item">
+                                <i class="fas fa-phone text-yellow"></i>
+                                <p id="sede-txt-telefono">341 - 2581774</p>
+                            </div>
+                            <div class="detalle-item">
+                                <i class="fas fa-clock text-yellow"></i>
+                                <p>Lunes a Viernes: 06:00 a 23:00 hs.<br>Sábados: 08:00 a 18:00 hs.</p>
+                            </div>
+                        </div>
+                        
+                        <a id="sede-link-maps" href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-sede">
+                            VER EN GOOGLE MAPS <i class="fas fa-directions"></i>
+                        </a>
+                    </div>
+
+                    <!-- Panel de Mapa Adaptativo -->
+                    <div class="sede-mapa-container">
+                        <div class="map-glow-border"></div>
+                        <iframe 
+                            id="sede-iframe-mapa"
+                            src="https://www.google.com/maps/embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="google-map-dark">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SECCIÓN PREGUNTAS FRECUENTES (FAQ ACORDEÓN) -->
+    <section id="faq" class="section-padding bg-black-pure">
+        <div class="container container-small">
+            <div class="section-title-wrapper text-center" data-aos="fade-up">
+                <span class="outline-text">06 // DESPEJÁ TUS DUDAS</span>
+                <h2>PREGUNTAS <span class="neon-text">FRECUENTES</span></h2>
+            </div>
+
+            <div class="faq-accordion" data-aos="fade-up" data-aos-delay="150">
+                <!-- Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Puedo entrenar en cualquier sede con mi pase?</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Sí! Si contás con el <strong>Plan Full</strong> o <strong>Plan Premium</strong>, tenés acceso totalmente libre e ilimitado a todas las sedes tradicionales de la red Training Center. El Plan Premium, además, habilita el ingreso a los exclusivos espacios Black Room.</p>
+                        <a href="https://wa.me/543415694993?text=Hola!%20Tengo%20una%20consulta%20sobre%20las%20FAQ%3A%20%C2%BFPuedo%20entrenar%20en%20cualquier%20sede%20con%20mi%20pase%3F" target="_blank" rel="noopener noreferrer" class="btn-faq-wa">
+                            <i class="fab fa-whatsapp"></i> Consultar por WhatsApp sobre esto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Tengo una lesión física previa, ¿puedo entrenar igual?</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Contamos con un staff de profesionales de la <strong>salud y kinesiología</strong> en sala. Te realizamos una evaluación funcional y adaptamos las cargas y ejercicios mediante kinefilaxia para garantizar un entrenamiento seguro, eficiente y sin dolores.</p>
+                        <a href="https://wa.me/543415694993?text=Hola!%20Tengo%20una%20consulta%20sobre%20las%20FAQ%3A%20Tengo%20una%20lesi%C3%B3n%20f%C3%ADsica%20previa%2C%20%C2%BFpuedo%20entrenar%20igual%3F" target="_blank" rel="noopener noreferrer" class="btn-faq-wa">
+                            <i class="fab fa-whatsapp"></i> Consultar por WhatsApp sobre esto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cómo recibo mis rutinas de entrenamiento?</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Todo nuestro sistema está digitalizado. Al inscribirte, te damos de alta en nuestra <strong>App Oficial</strong>, donde vas a poder visualizar tus planes de entrenamiento personalizados armados por los profes, videos explicativos de la ejecución de cada ejercicio y llevar un registro preciso de tus progresos biomecánicos.</p>
+                        <a href="https://wa.me/543415694993?text=Hola!%20Tengo%20una%20consulta%20sobre%20las%20FAQ%3A%20%C2%BFC%C3%B3mo%20recibo%20mis%20rutinas%20de%20entrenamiento%3F" target="_blank" rel="noopener noreferrer" class="btn-faq-wa">
+                            <i class="fab fa-whatsapp"></i> Consultar por WhatsApp sobre esto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué diferencia hay entre una Sede Red y Black Room?</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Las Sedes Tradicionales cuentan con toda la infraestructura de elite para musculación y cross training. Los espacios <strong>Black Room</strong> son salones de formato premium y cupos limitados, diseñados para un entrenamiento enfocado de alto rendimiento, con equipamientos boutique únicos y una ambientación acústica y visual diferencial.</p>
+                        <a href="https://wa.me/543415694993?text=Hola!%20Tengo%20una%20consulta%20sobre%20las%20FAQ%3A%20%C2%BFQu%C3%A9%20diferencia%20hay%20entre%20una%20Sede%20Red%20y%20Black%20Room%3F" target="_blank" rel="noopener noreferrer" class="btn-faq-wa">
+                            <i class="fab fa-whatsapp"></i> Consultar por WhatsApp sobre esto
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caja de Remate Comercial abajo de las FAQ -->
+            <div class="faq-cta-box" data-aos="fade-up" data-aos-delay="200">
+                <p>¿Tenés otra consulta o querés conocer las instalaciones en persona?</p>
+                <a href="#contacto" class="btn-cyber">RESERVAR MI PASE DE PRUEBA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. SECCIÓN CONTACTO -->
+    <section id="contacto" class="section-padding">
+        <div class="container container-small" data-aos="flip-up">
+            <div class="form-wrapper">
+                <h2>¿LISTO PARA EL <span class="neon-text">CAMBIO?</span></h2>
+                <p>Ingresá tus datos para congelar el precio de tu matrícula y agendar un pase libre de prueba.</p>
+                <form class="cyber-form" action="https://formspree.io/f/TU_FORM_ID" method="POST">
+    <div class="input-group">
+        <input type="text" name="nombre" required placeholder=" ">
+        <label>Nombre Completo</label>
+    </div>
+    <div class="input-group">
+        <input type="email" name="email" required placeholder=" ">
+        <label>Correo Electrónico</label>
+    </div>
+    <div class="input-group">
+        <input type="tel" name="whatsapp" required placeholder=" ">
+        <label>WhatsApp (Con código de área)</label>
+    </div>
+    <button type="submit" class="btn-main full-width">INSCRIBITE <i class="fas fa-angle-right"></i></button>
+</form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-box">
+            <p>© 2026 TRAINING CENTER. Desarrollado con los más altos estándares de rendimiento.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Animación y Control Interactivo -->
+    <script src="https://unpkg.com/aos@next/dist/2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicialización de librería de efectos en scroll
+        try {
+            AOS.init({ duration: 800, once: false, mirror: true });
+        } catch(e) { console.log("AOS Error:", e); }
+
+        // 1. GESTIÓN DEL CRONOGRAMA INICIAL
+        document.addEventListener('DOMContentLoaded', () => {
+            filtrarDia('lunes-miercoles');
+        });
+
+        // 2. ESTRUCTURA DE DATOS PARA CRONOGRAMA DE HORARIOS
+        const baseDatosHorarios = {
+            'lunes-miercoles': [
+                { time: '07:00 - 08:30', name: 'Cross Training <span class="badge-metabolic">WOD</span>', sedes: 'Centro, Abasto, Echesortu, San Martín', nivel: 'Avanzado / Intermedio', destacada: false },
+                { time: '09:00 - 11:00', name: 'Rehabilitación Funcional & Kinefilaxia', sedes: 'Lourdes, Rioja, Black Room San Lorenzo', nivel: 'Todos los niveles', destacada: false },
+                { time: '14:00 - 17:00', name: 'Musculación y Biomecánica Dirigida', sedes: 'Todas las sedes (Red completa)', nivel: 'Todos los niveles', destacada: false },
+                { time: '18:30 - 20:00', name: 'Elite Performance Training <i class="fas fa-crown text-yellow"></i>', sedes: 'Black Room San Lorenzo, Black Room Montevideo', nivel: 'Avanzado (Socio Premium)', destacada: true },
+                { time: '20:00 - 21:30', name: 'Cross Training', sedes: 'Todas las sedes de la Red', nivel: 'Intermedio', destacada: false }
+            ],
+            'martes-jueves': [
+                { time: '08:00 - 09:30', name: 'Cross Training <span class="badge-metabolic">WOD</span>', sedes: 'Centro, Hipódromo, Norte, Microcentro', nivel: 'Intermedio', destacada: false },
+                { time: '10:00 - 12:00', name: 'Evaluación de Postura & Marcha Custom', sedes: 'Lourdes, Sede Centro', nivel: 'Con Reserva Previa', destacada: false },
+                { time: '16:00 - 19:00', name: 'Musculación Libre Planificada', sedes: 'Todas las sedes de la Red', nivel: 'Todos los niveles', destacada: false },
+                { time: '19:15 - 20:45', name: 'Powerlifting & Fuerza Isométrica', sedes: 'Black Room Montevideo, Sede Abasto', nivel: 'Avanzado', destacada: true }
+            ],
+            'sabados': [
+                { time: '09:00 - 11:00', name: 'Super WOD Sabático Extremo <i class="fas fa-bolt text-yellow"></i>', sedes: 'Sede Centro, Abasto, Black Room San Lorenzo', nivel: 'Comunidad Completa', destacada: true },
+                { time: '11:00 - 15:00', name: 'Entrenamiento Libre Estructurado', sedes: 'Todas las sedes habilitadas', nivel: 'Todos los niveles', destacada: false }
+            ]
+        };
+
+        // 3. FUNCIÓN DE RENDERIZADO DINÁMICO DE CRONOGRAMAS (CON FIX DE EVENTO)
+        function filtrarDia(dia, event) {
+            document.querySelectorAll('.dia-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // Evaluamos el evento de forma segura sin romper navegadores
+            const e = event || window.event;
+            if (e && e.target) { 
+                e.target.classList.add('active'); 
+            }
+
+            const body = document.getElementById('cronograma-body');
+            const clasesDelDia = baseDatosHorarios[dia] || [];
+            
+            let filasHtml = clasesDelDia.map(clase => {
+                const claseDestacada = clase.destacada ? 'row-destacada' : '';
+                return `
+                    <tr class="schedule-row ${claseDestacada}">
+                        <td class="time-col">${clase.time}</td>
+                        <td class="class-name">${clase.name}</td>
+                        <td>${clase.sedes}</td>
+                        <td>${clase.nivel}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            if (body) {
+                body.innerHTML = filasHtml;
+            }
+        }
+
+        // 4. LÓGICA DE INTERACTIVIDAD PARA CAMBIAR SEDE
+        function cambiarSede(id, direccion, telefono, lat, lng, event) {
+            document.querySelectorAll('.sede-tab-btn').forEach(btn => btn.classList.remove('active'));
+            const e = event || window.event;
+            if(e && e.target) { e.target.classList.add('active'); }
+
+            let nombreLindo = id.replace('br-', 'BLACK ROOM ').replace('abasto','ABASTO').replace('centro','CENTRO').replace('hipodromo','HIPÓDROMO').replace('sanmartin','SAN MARTÍN').replace('echesortu','ECHESORTU').replace('norte','NORTE').replace('lourdes','LOURDES').replace('rioja','RIOJA').replace('montevideo','MONTEVIDEO').replace('microcentro','MICROCENTRO').replace('sanlorenzo','SAN LORENZO');
+            if(!id.includes('br-')) {
+                nombreLindo = "TRAINING CENTER " + nombreLindo;
+                document.getElementById('sede-badge-tipo').innerText = "SEDE RED";
+                document.getElementById('sede-badge-tipo').className = "sede-tag";
+            } else {
+                document.getElementById('sede-badge-tipo').innerText = "PREMIUM LOUNGE";
+                document.getElementById('sede-badge-tipo').className = "sede-tag badge-br";
+            }
+
+            document.getElementById('sede-nombre-titulo').innerText = nombreLindo;
+            document.getElementById('sede-txt-direccion').innerText = direccion + ", Rosario, Santa Fe";
+            document.getElementById('sede-txt-telefono').innerText = telefono;
+            document.getElementById('sede-link-maps').href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(direccion)}+Rosario`;
+            document.getElementById('sede-iframe-mapa').src = `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13380.0!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1710000000000!5m2!1ses-419!2sar`;
+        }
+
+        // 5. ACORDEÓN DE PREGUNTAS FRECUENTES (FAQ)
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+    <footer class="footer">
+        ...
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script> </body>
+</html>
+</body>
+</html>
